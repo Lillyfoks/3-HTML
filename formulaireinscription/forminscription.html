@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Formulaire d'inscription :</legend>
+        <table>
+        <tr>
+        <td>Nom</td>
+        <td>&emsp; <input type="text"></td>
+        </tr>
+        <tr>
+        <td>Prénom</td>
+        <td>&nbsp; <input type="text"></td>
+        </tr>
+        <tr>
+        <td>Email</td>
+        <td>&emsp; <input type="text"></td>
+        </tr>
+        <tr>
+        <td>Sexe</td>
+        <td><input type="radio" name="text" value="homme" checked="checked"> Homme
+        <input type="radio" name="text" value="femme"> Femme</td>
+        </tr>
+        <tr>
+        <td>Photo</td>
+        <td>&emsp; <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg" /></td>
+        </tr>
+        <tr>
+        <td>Pays</td>
+        <td><select name="Pays">
+            <option value="France" selected>France</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Espagne">Espagne</option>
+        </select></td>
+        </tr>
+        <tr>
+        <td>Les langages préférés</td>
+        <td><select name="langage" multiple>
+            <option value="Java" selected>Java</option>
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="PHP">PHP</option>
+        </select>
+        (Pour faire plusieurs choix maintenir la touche CTRL enfoncée)</td>
+        </tr>
+        <tr>
+        <td>Domaine d'activités</td>
+        <td><input type="checkbox" name="domaine1" value="Informatique" checked> Informatique
+        <input type="checkbox" name="domaine2" value="Gestion"> Gestion
+        <input type="checkbox" name="domaine3" value="Pédagogie"> Pédagogie</td>
+        </tr>
+        <tr>
+        <td><button>Envoyer</button> <button>Annuler</button></td>
+        </tr>
+    </table>
+    </fieldset>
+</body>
+
+</html>

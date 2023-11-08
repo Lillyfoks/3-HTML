@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    position: absolute;
+    left: 600px;
+}
+form {
+    border: 2px solid lightseagreen;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    width: fit-content;
+    margin-top: 110px;
+}
+
+.questions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.ecrit {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.ecrit label, .ecrit input, .ecrit select {
+    margin: 10px;
+}
+.reponse input, .reponse select{
+    background-color: lightgray;
+    border: 0;
+    padding: 0.5em;
+}
+#genre{
+    color: grey;
+}
+#commentaire {
+    height: 100px;
+}
+.choix {
+    margin: 20px;
+}
+.btn {
+    width: 100%;
+    align-items: center;
+    padding: 1em;
+    background-color: lightseagreen;
+    color: white;
+    border: 0;
+}

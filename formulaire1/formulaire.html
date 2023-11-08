@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+    <link rel="stylesheet" href="formulaire.css">
+</head>
+
+<body>
+    <header class="logo">
+        <img src="logo.jpg" alt="Logo Afpa" id="logo">
+    </header>
+    <main>
+        <form method="post">
+            <section class="questions">
+                <article class="ecrit">
+                    <section class="reponse">
+                        <input type="text" name="nom - prenom" placeholder="Nom-Prénom">
+                    </section>
+                    <section class="reponse">
+                        <input type="text" name="mail" placeholder="Courriel">
+                    </section>
+                    <section class="reponse">
+                        <input type="text" name="telephone" placeholder="Téléphone">
+                    </section>
+                    <section class="reponse">
+                        <select name="sexe">
+                            <option value="Vous êtes..." disabled>Vous êtes...</option>
+                            <option value="Homme">un Homme</option>
+                            <option value="Femme">une Femme</option>
+                            <option value="Autre">Autre</option>
+                        </select>
+                    </section>
+                    <section class="reponse">
+                        <input type="text" name="commentaire" placeholder="Commentaires" id="commentaire">
+                    </section>
+                </article>
+                <article class="clic">
+                    <section class="choix">
+                        <label><b>Quelle est la meilleure manière de vous contacter ?</b></label> <br>
+                        <input type="radio" name="méthode" value="Téléphone">Téléphone <br>
+                        <input type="radio" name="méthode" value="Courriel">Courriel <br>
+                    </section>
+                    <section class="choix">
+                        <label><b>Jours de la semaine où vous êtes disponible :</b></label> <br>
+                        <input type="checkbox" name="jour1" value="Lundi">Lundi <br>
+                        <input type="checkbox" name="jour2" value="Mardi">Mardi <br>
+                        <input type="checkbox" name="jour3" value="Mercredi">Mercredi <br>
+                        <input type="checkbox" name="jour4" value="Jeudi">Jeudi <br>
+                        <input type="checkbox" name="jour5" value="Vendredi">Vendredi <br>
+                    </section>
+                    <section class="choix">
+                        <label><b>Heure appropriée pour un rendez-vous :</b></label> <br>
+                        <input type="checkbox" name="heure1" value="Matin">Matin <br>
+                        <input type="checkbox" name="heure2" value="Après-Midi">Après-Midi
+                    </section>
+                </article>
+            </section>
+            <hr>
+            <button class="btn">Envoyer</button>
+        </form>
+    </main>
+</body>
+
+</html>

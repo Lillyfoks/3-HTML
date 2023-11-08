@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="testtableau.html" title="Ouvrir une deuxième page">Mon autre page</a>
+    </nav>
+
+    <form action=" test.html" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" name="nom" size="50" maxlength="50" value="votre NOM">
+        <input type="submit" value="envoyer">
+    </form>
+
+    <input type="radio" name="couleur" value="Bleu"> Bleu
+    <input type="radio" name="couleur" value="Rouge"> Rouge
+    <input type="radio" name="couleur" value="Vert" checked="checked"> Vert
+
+    <select name="couleur">
+        <option value="Bleu">Bleu</option>
+        <option value="Rouge">Rouge</option>
+        <option value="Vert" selected>Vert</option>
+    </select>
+
+
+    <select name="couleur" size="3" multiple="multiple">
+        <option value="Bleu">Bleu</option>
+        <option value="Rouge">Rouge</option>
+        <option value="Vert">Vert</option>
+    </select>
+
+    <fieldset>
+        <legend>Détails :</legend>
+        Nom: <input type="text"><br>
+        Email: <input type="text"><br>
+        Date de naissance: <input type="text">
+        <input type="submit" value="envoyer">
+    </fieldset>
+
+    <label>Sélectionnez votre métier</label>
+    <input type="text" name="metiers1" id="metiers2" list="metiers3"><br>
+    <datalist id="metiers3">
+        <option value="webmaster">
+        <option value="développeur">
+        <option value="administrateur B.D.D.">
+    </datalist>
+
+    <form method="post" action="post.php" id="monform" onsubmit="resultat.value
+= parseInt(nombre1.value) + parseInt(nombre2.value); return false;">
+        <input type="number" name="nombre1" id="nombre1"> + <input type="number" name="nombre2" id="nombre2"> = <output
+            for="number1 number2" name="resultat" form="monform"></output><br><br>
+        <input type="submit" name="envoi" value="Calculer">
+    </form>
+
+    <input type="text" placeholder="Entrez votre nom" pattern="^[a-z]+$" required
+        title="Entrez votre nom (que des caractères entre a et z)" />
+    <input type="submit" value="envoyer">
+
+</body>
+
+</html>

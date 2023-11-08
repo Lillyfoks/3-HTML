@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meta name "charset = utf8 = langues" "viewport = responsive", "description"...-->
+    <title>Correction</title>
+</head>
+
+<body>
+    <header>
+        logo
+    </header>
+    <main>
+
+        <!--<form method="get = url (limite carac) post = pas limite carac " action="recup.php" enctype="multipart/form-data = pour upload fichier">-->
+        <form action="recup.php" method="get">
+            <section>
+                <article>
+                    <input name="name" type="text" placeholder="Nom-Prénom">
+                    <input name="telephone" type="tel" placeholder="Téléphone">
+                    <input name="email" type="email" placeholder="Courriel">
+                    <!--input type= "date", "number", "ranger", "color", "hidden","password", "datetime", "datetime-local", "checkbox", "radio"-->
+                    <select name="genre"> <!--size="2"= quantité lignes affichées multiple = selection multiple-->
+                        <option selected disabled>Vous êtes</option>
+                        <option>homme</option> <!--selected-->
+                        <option>femme</option>
+                    </select>
+                    <textarea>Commentaires</textarea>
+                </article>
+                <article>
+                    <input type="radio" name="moyen" value="téléphone" required>&nbsp;&nbsp;Téléphone
+                    <!--&nbsp; = espace  le nom permet de n'en sélectionner qu'un-->
+                    <input type="radio" name="moyen" value="courriel" required>&nbsp;&nbsp;Courriel
+                    <!--la fonction pattern permet d'imposer un format (maj/min/nombre/carac spéciaux...)-->
+                    <br>
+                    <input type="checkbox" name="jour[]" value="lundi">&nbsp;&nbsp;Lundi
+                    <!--Jour[] = permet de renseigner plusieurs valeurs sur un seul name-->
+                    <input type="checkbox" name="jour[]" value="mardi">&nbsp;&nbsp;Mardi
+                    <input type="checkbox" name="jour[]" value="mercredi">&nbsp;&nbsp;Mercredi
+                    <input type="checkbox" name="jour[]" value="jeudi">&nbsp;&nbsp;Jeudi
+                    <input type="checkbox" name="jour[]" value="vendredi">&nbsp;&nbsp;Vendredi
+                </article>
+            </section>
+            <section>
+                <button>Envoi</button>
+            </section>
+        </form>
+    </main>
+</body>
+
+</html>
